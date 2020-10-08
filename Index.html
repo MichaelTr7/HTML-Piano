@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+</head>
+
+<audio id = "Note_C1_Sound">
+  <source  src="Note_C1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_D1_Sound">
+  <source  src="Note_D1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_E1_Sound">
+  <source  src="Note_E1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_F1_Sound">
+  <source  src="Note_F1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_G1_Sound">
+  <source  src="Note_G1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_A1_Sound">
+  <source  src="Note_A1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_B1_Sound">
+  <source  src="Note_B1.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_C2_Sound">
+  <source  src="Note_C2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_D2_Sound">
+  <source  src="Note_D2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_E2_Sound">
+  <source  src="Note_E2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_F2_Sound">
+  <source  src="Note_F2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_G2_Sound">
+  <source  src="Note_G2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_A2_Sound">
+  <source  src="Note_A2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_B2_Sound">
+  <source  src="Note_B2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_B2_Sound">
+  <source  src="Note_B2.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_C1_Sharp_Sound">
+  <source  src="Note_C1_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_D1_Sharp_Sound">
+  <source  src="Note_D1_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_F1_Sharp_Sound">
+  <source  src="Note_F1_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_G1_Sharp_Sound">
+  <source  src="Note_G1_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_A1_Sharp_Sound">
+  <source  src="Note_A1_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_C2_Sharp_Sound">
+  <source  src="Note_C2_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_D2_Sharp_Sound">
+  <source  src="Note_D2_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_F2_Sharp_Sound">
+  <source  src="Note_F2_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_G2_Sharp_Sound">
+  <source  src="Note_G2_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+<audio id = "Note_A2_Sharp_Sound">
+  <source  src="Note_A2_Sharp.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<body>
+
+<!-- Natural Notes -->
+<div class = "Natural_Keys" id = "Note_C1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_D1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_E1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_F1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_G1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_A1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_B1" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_C2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_D2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_E2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_F2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_G2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_A2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Natural_Keys" id = "Note_B2" onclick = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+
+<!-- Sharps and Flats -->
+<div class = "Sharp_Keys" id = "Note_C1_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_D1_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_F1_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_G1_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_A1_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_C2_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_D2_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_F2_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_G2_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+<div class = "Sharp_Keys" id = "Note_A2_Sharp" onmousedown = "Play_Note(id)" onmouseup = "End_Note(id)"></div>
+
+</body>
+
+<script type="text/javascript">
+
+// create web audio api context
+var audioCtx = new(window.AudioContext || window.webkitAudioContext)();
+
+
+function playNote(frequency, duration) {
+  // create Oscillator node
+  var oscillator = audioCtx.createOscillator();
+
+  oscillator.type = 'square';
+  oscillator.frequency.value = frequency; // value in hertz
+  oscillator.connect(audioCtx.destination);
+  oscillator.start();
+
+
+
+  setTimeout(
+    function() {
+      oscillator.stop();
+    }, duration);
+}
+
+
+function Play_Note(Note_ID){
+
+var Note_Sound = document.getElementById(Note_ID + "_Sound");
+Note_Sound.currentTime = 0;
+Note_Sound.volume = 0.2;
+Note_Sound.play();
+var Pressed_Button = document.getElementById(Note_ID);
+Pressed_Button.style.filter = "invert(0.2)";
+
+}
+
+function End_Note(Note_ID){
+
+var Pressed_Button = document.getElementById(Note_ID);
+setTimeout(function () {
+  Pressed_Button.style.filter = "invert(0)";
+}, 200);
+}
+
+// var x = document.getElementById("myAudio");
+//
+// function playAudio() {
+//   x.play();
+// }
+//
+// function pauseAudio() {
+//   x.pause();
+// }
+
+</script>
+
+
+<style media="screen">
+
+body{
+background: #001376;
+}
+
+.Natural_Keys{
+  position: absolute;
+  width: 30px;
+  height: 150px;
+  background: linear-gradient(0deg, #EEEEEE, #EEEEEE);
+  border: 1.5px solid #001376;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -5px 0.2px 2px rgba(129, 129, 129, 0.3);
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.Sharp_Keys{
+  position: absolute;
+  width: 19px;
+  height: 77px;
+  background: linear-gradient(0deg, #252525, #252525);
+  border: 3px solid #001376;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -10px 0px rgba(102, 102, 102, 0.25);
+  border-radius: 2px;
+  transition: 0.25s;
+}
+
+.Natural_Keys:hover{
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.Sharp_Keys:hover{
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#Note_C1{
+  position: absolute;
+  left: 40px;
+  top: 33px;
+}
+
+#Note_D1{
+  position: absolute;
+  left: 70px;
+  top: 33px;
+}
+
+#Note_E1{
+  left: 100px;
+  top: 33px;
+}
+
+#Note_F1{
+  left: 130px;
+  top: 33px;
+}
+
+#Note_G1{
+  left: 160px;
+  top: 33px;
+}
+
+#Note_A1{
+  left: 190px;
+  top: 33px;
+}
+
+#Note_B1{
+  left: 220px;
+  top: 33px;
+}
+#Note_C2{
+  left: 250px;
+  top: 33px;
+}
+#Note_D2{
+  left: 280px;
+  top: 33px;
+}
+#Note_E2{
+  left: 310px;
+  top: 33px;
+}
+#Note_F2{
+  left: 340px;
+  top: 33px;
+}
+#Note_G2{
+  left: 370px;
+  top: 33px;
+}
+#Note_A2{
+  left: 400px;
+  top: 33px;
+}
+#Note_B2{
+  left: 430px;
+  top: 33px;
+}
+
+#Note_C1_Sharp{
+  left: 60px;
+  top: 31px;
+}
+#Note_D1_Sharp{
+  left: 92px;
+  top: 31px;
+}
+#Note_F1_Sharp{
+  left: 151px;
+  top: 31px;
+}
+#Note_G1_Sharp{
+  left: 181px;
+  top: 31px;
+}
+#Note_A1_Sharp{
+  left: 212px;
+  top: 31px;
+}
+#Note_C2_Sharp{
+  left: 270px;
+  top: 31px;
+}
+#Note_D2_Sharp{
+  left: 300px;
+  top: 31px;
+}
+#Note_F2_Sharp{
+  left: 360px;
+  top: 31px;
+}
+#Note_G2_Sharp{
+  left: 391px;
+  top: 31px;
+}
+#Note_A2_Sharp{
+  left: 421px;
+  top: 31px;
+}
+
+
+
+.Key_Released_Animation{
+  -webkit-animation: Key_Pressed_Keyframes 0.01s reverse;
+  animation: Key_Pressed_Keyframes 0.01s reverse;
+}
+
+
+.Key_Pressed_Animation{
+  -webkit-animation: Key_Pressed_Keyframes 0.5s ease-in;
+  animation: Key_Pressed_Keyframes 0.5s;
+}
+
+@keyframes Key_Pressed_Keyframes{
+  from{filter:invert(0);}
+  to{filter:invert(0.2);}
+}
+
+
+
+
+</style>
+
+</html>
